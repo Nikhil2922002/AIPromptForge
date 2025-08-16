@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - AI Prompt Forge</title>
+    <meta name="description" content="Learn about AI Prompt Forge, a passion project dedicated to helping creators, writers, and artists overcome creative blocks using the power of AI.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://your-website-url.com/about.html">
+    <meta property="og:title" content="About Us - AI Prompt Forge">
+    <meta property="og:description" content="Learn about AI Prompt Forge, a passion project dedicated to helping creators, writers, and artists overcome creative blocks using the power of AI.">
+    <meta property="og:image" content="https://your-website-url.com/og-image-about.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://your-website-url.com/about.html">
+    <meta property="twitter:title" content="About Us - AI Prompt Forge">
+    <meta property="twitter:description" content="Learn about AI Prompt Forge, a passion project dedicated to helping creators, writers, and artists overcome creative blocks using the power of AI.">
+    <meta property="twitter:image" content="https://your-website-url.com/og-image-about.jpg">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Orbitron:wght@700&display=swap" rel="stylesheet">
+
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #111827; }
+        .font-orbitron { font-family: 'Orbitron', sans-serif; }
+        .gradient-bg {
+            background: linear-gradient(-45deg, #111827, #1f2937, #374151, #4b5563);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+        @keyframes gradient { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; } }
+        .content-section h2 { @apply text-3xl font-bold text-indigo-400 mb-4; }
+        .content-section h3 { @apply text-2xl font-bold text-gray-200 mt-6 mb-3; }
+        .content-section p { @apply text-gray-400 leading-relaxed mb-4; }
+    </style>
+</head>
+<body class="gradient-bg text-gray-200">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-gray-900/70 backdrop-blur-md sticky top-0 z-50 border-b border-gray-700">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <a href="index.html" class="text-2xl font-orbitron font-bold text-white">AI Prompt <span class="text-indigo-400">Forge</span></a>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-300 hover:text-indigo-400 transition-colors">Home</a>
+                    <a href="blogs.html" class="text-gray-300 hover:text-indigo-400 transition-colors">Blogs</a>
+                    <a href="about.html" class="text-indigo-400 font-bold transition-colors">About</a>
+                    <a href="contact.html" class="text-gray-300 hover:text-indigo-400 transition-colors">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-300 focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="index.html" class="block py-2 px-4 text-sm text-gray-300 hover:bg-gray-700">Home</a>
+            <a href="blogs.html" class="block py-2 px-4 text-sm text-gray-300 hover:bg-gray-700">Blogs</a>
+            <a href="about.html" class="block py-2 px-4 text-sm text-indigo-400 bg-gray-700">About</a>
+            <a href="contact.html" class="block py-2 px-4 text-sm text-gray-300 hover:bg-gray-700">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mx-auto px-4 py-16">
+        <div class="w-full max-w-4xl mx-auto bg-gray-900/60 backdrop-blur-sm p-8 md:p-12 rounded-2xl shadow-2xl border border-gray-700 content-section">
+            <header class="text-center mb-10">
+                <h1 class="font-orbitron text-4xl md:text-5xl font-bold text-white">About AI Prompt <span class="text-indigo-400">Forge</span></h1>
+            </header>
+            
+            <img src="https://placehold.co/800x400/1f2937/6366f1?text=Our+Mission" alt="Team or abstract graphic" class="rounded-lg mb-8 w-full h-64 object-cover">
+            
+            <h2>Our Mission</h2>
+            <p>At AI Prompt Forge, we believe that creativity is humanity's greatest asset. In the age of artificial intelligence, we see not a replacement for human ingenuity, but a powerful catalyst for it. Our mission is to provide creators of all kinds—writers, artists, game developers, musicians, and thinkers—with the spark they need to ignite their next masterpiece.</p>
+            <p>The dreaded "blank page" is a universal challenge. We built this tool to be the ultimate cure for creative block, a brainstorming partner available 24/7, ready to offer a universe of ideas from a single word or thought.</p>
+
+            <h3>Who We Are</h3>
+            <p>AI Prompt Forge was created by Ankur B., a developer and creative enthusiast with a passion for exploring the intersection of technology and art. Fascinated by the potential of large language models, Ankur wanted to build a simple, beautiful, and powerful tool that makes advanced AI accessible to everyone.</p>
+            <p>This project is a one-person endeavor, born from a desire to build something useful and share it with the world. Every feature, every line of code, and every design choice is driven by the goal of making your creative process easier and more enjoyable.</p>
+
+            <h3>Why AI Prompts?</h3>
+            <p>A great prompt is the key to unlocking the potential of generative AI. It's the difference between a generic, uninspired output and a piece of content that is nuanced, detailed, and perfectly aligned with your vision. We're dedicated to not only generating high-quality prompts but also educating our users on the "art of the prompt" so they can get the most out of any AI tool they use.</p>
+            <p>Thank you for visiting. We hope AI Prompt Forge helps you on your creative journey. Now go make something amazing!</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-gray-700 mt-16">
+        <div class="container mx-auto px-4 py-8">
+            <div class="flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+                <div class="mb-4 md:mb-0">
+                    <p class="text-lg font-orbitron font-bold">AI Prompt <span class="text-indigo-400">Forge</span></p>
+                    <p class="text-sm text-gray-400">&copy; 2024 AI Prompt Forge. All Rights Reserved.</p>
+                </div>
+                <div class="flex flex-wrap justify-center gap-x-6 gap-y-2">
+                    <a href="index.html" class="text-gray-400 hover:text-indigo-400 transition-colors">Home</a>
+                    <a href="blogs.html" class="text-gray-400 hover:text-indigo-400 transition-colors">Blogs</a>
+                    <a href="about.html" class="text-gray-400 hover:text-indigo-400 transition-colors">About</a>
+                    <a href="contact.html" class="text-gray-400 hover:text-indigo-400 transition-colors">Contact</a>
+                    <a href="privacy.html" class="text-gray-400 hover:text-indigo-400 transition-colors">Privacy Policy</a>
+                    <a href="terms.html" class="text-gray-400 hover:text-indigo-400 transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
