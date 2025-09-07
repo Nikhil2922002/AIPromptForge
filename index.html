@@ -1,18 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script type="text/javascript">
-	atOptions = {
-		'key' : 'e839d90ca063fba38a9e6a85c3e3a538',
-		'format' : 'iframe',
-		'height' : 60,
-		'width' : 468,
-		'params' : {}
-	};
-</script>
-<script type="text/javascript" src="//www.highperformanceformat.com/e839d90ca063fba38a9e6a85c3e3a538/invoke.js"></script>
+    <!-- AdSense Script -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9410062339187724"
      crossorigin="anonymous"></script>
+     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Prompt Forge - Generate Creative Prompts</title>
@@ -22,15 +14,15 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://your-website-url.com/">
     <meta property="og:title" content="AI Prompt Forge - Generate Creative Prompts">
-    <meta property="og:description" content="Unleash your creativity with AI-powered prompts. Perfect for writers, artists, and creators looking for their next big idea.">
-    <meta property="og:image" content="https://your-website-url.com/og-image.jpg"> <!-- Add a URL to an attractive OG image -->
+    <meta property="og:description" content="Unleash your creativity with AI-powered prompts. Perfect for writers, artists, and creators for their next big idea.">
+    <meta property="og:image" content="https://your-website-url.com/og-image.jpg">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://your-website-url.com/">
     <meta property="twitter:title" content="AI Prompt Forge - Generate Creative Prompts">
-    <meta property="twitter:description" content="Unleash your creativity with AI-powered prompts. Perfect for writers, artists, and creators looking for their next big idea.">
-    <meta property="twitter:image" content="https://your-website-url.com/og-image.jpg"> <!-- Add a URL to an attractive Twitter card image -->
+    <meta property="twitter:description" content="Unleash your creativity with AI-powered prompts. Perfect for writers, artists, and creators for their next big idea.">
+    <meta property="twitter:image" content="https://your-website-url.com/og-image.jpg">
 
     <!-- Tailwind CSS for styling -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -175,20 +167,22 @@
 
     <div class="container mx-auto px-4 py-8 md:py-16 flex flex-col items-center">
         
-        <!-- AdSense Header Ad Placeholder -->
-       <!-- Ad Placement -->
-<div class="w-full max-w-4xl mb-8 flex justify-center">
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'edc2cb4f90abec6f163471a332238c9d',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="//www.highperformanceformat.com/edc2cb4f90abec6f163471a332238c9d/invoke.js"></script>
-</div>
+        <!-- ====================================================== -->
+        <!-- == HEADER AD PLACEMENT (728x90 BANNER) == -->
+        <!-- ====================================================== -->
+        <div class="w-full max-w-4xl mb-8 flex justify-center">
+            <script type="text/javascript">
+                atOptions = {
+                    'key' : 'edc2cb4f90abec6f163471a332238c9d',
+                    'format' : 'iframe',
+                    'height' : 90,
+                    'width' : 728,
+                    'params' : {}
+                };
+            </script>
+            <script type="text/javascript" src="//www.highperformanceformat.com/edc2cb4f90abec6f163471a332238c9d/invoke.js"></script>
+        </div>
+        
         <!-- Header Section -->
         <header class="text-center mb-10">
             <h1 class="font-orbitron text-4xl md:text-6xl font-bold text-white tracking-wider">
@@ -220,6 +214,22 @@
         <!-- Results Section -->
         <div id="results-container" class="w-full max-w-4xl mt-12 grid gap-6">
             <!-- Generated prompts will be inserted here -->
+        </div>
+
+        <!-- ====================================================== -->
+        <!-- == SECOND AD PLACEMENT (468x60 BANNER) == -->
+        <!-- ====================================================== -->
+        <div class="w-full max-w-lg my-12 flex justify-center">
+            <script type="text/javascript">
+                atOptions = {
+                    'key' : 'e839d90ca063fba38a9e6a85c3e3a538',
+                    'format' : 'iframe',
+                    'height' : 60,
+                    'width' : 468,
+                    'params' : {}
+                };
+            </script>
+            <script type="text/javascript" src="//www.highperformanceformat.com/e839d90ca063fba38a9e6a85c3e3a538/invoke.js"></script>
         </div>
         
         <!-- Error Message Box -->
@@ -362,7 +372,7 @@
                 }
             };
             
-            const apiKey = "AIzaSyCfxXygNQEezGgqQ4VPTrHmmPY4LfW7bf8";
+            const apiKey = "AIzaSyCfxXygNQEezGgqQ4VPTrHmmPY4LfW7bf8"; // Make sure this is your own, restricted API key
             const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
 
             let response;
@@ -374,12 +384,10 @@
                 });
 
                 if (!response.ok) {
-                    // If response is not OK, try to get a detailed error message from the body
                     const errorData = await response.json().catch(() => ({ error: { message: "Could not parse error response." } }));
                     console.error("API Error Details:", errorData);
                     let detailedMessage = errorData.error?.message || `HTTP error! Status: ${response.status}`;
                     
-                    // Provide a more user-friendly message for common issues
                     if (detailedMessage.includes("API key not valid")) {
                         detailedMessage = "The API key is not valid. Please check and try again.";
                     } else if (response.status === 403) {
@@ -487,5 +495,4 @@
 
 </body>
 </html>
-
-
+what is the error now?
